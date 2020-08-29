@@ -52,6 +52,16 @@ class _MySecondState extends State<MySecond> {
                 ));
               },
               child: Text('press'),
+            ),
+            RaisedButton(
+              onPressed: () {
+                Scaffold.of(context).showSnackBar(SnackBar(
+                  content: Text('hello'),
+                  duration: Duration(seconds: 10),
+                  backgroundColor: Colors.grey,
+                ));
+              },
+              child: Text('hello'),
             )
           ],
         ),
